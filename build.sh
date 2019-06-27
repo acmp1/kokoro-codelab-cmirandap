@@ -6,7 +6,7 @@ set -e
 set -x
 
 if [ "$1" == "release" ]; then
-  javac -g:none main.go
+  go run main.go
 else
-  javac main.go
+  go run main.go
 fi
